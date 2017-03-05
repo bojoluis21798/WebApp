@@ -1,3 +1,6 @@
+<?php
+	require("database_config.php");
+?>
 <html>
 <head>
 	<link rel = 'stylesheet' href = 'css/bootstrap.min.css'>
