@@ -1,3 +1,5 @@
 This is the notepad for our progress:
 
 - made a repository for GitHub lol
+
+- bruh can ya pls clone the updated web app folder
