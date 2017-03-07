@@ -1,0 +1,58 @@
+.box{
+	border: 1px solid white;
+}
+
+body{
+	background-image: url(../img/bg.jpg);
+	color: white;
+}
+
+input{
+	height: 7%;
+	
+}
+
+.logintitle{
+	font-family: Courier New;
+}
+
+.btn{
+	height:10%;
+}
+
+.but1{
+	background-color: grey;
+	color: white;
+}
+
+.but2{
+	background-color: black;
+	color: white;
+}
+
+.forbut{
+	margin-top:10%;
+	margin-bottom:5%;
+}
+
+.menubg{
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+}
+
+.formproper{
+	margin-top: 7%;
+}
+
+.logintitle{
+	font-size: 5em;
+	
+}
+
+.loginform{
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	width: 50%;
+}
