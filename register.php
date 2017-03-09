@@ -32,9 +32,7 @@
 								</div>
 							</div>
 							<div class='row forbut'>
-								<a href='register.php'>
-									<button id='reg' type='button' class='btn-lg but2 col-md-10 col-md-offset-1 btn btn-default'>Register</button>
-								</a>
+									<input type='submit' id='reg' class='btn-lg but2 col-md-10 col-md-offset-1 btn btn-default' value = 'Register'>
 							</div>
 						</form>
 					</div>
