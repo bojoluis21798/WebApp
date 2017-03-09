@@ -1,6 +1,7 @@
 <html>
 	<link rel='stylesheet' href='css/bootstrap.css'/>
 	<link rel='stylesheet' href='css/index.css'/>
+	<link rel='icon' href='img/webico.ico'/>
 	<script src='js/jquery.min.js'></script>
 	<script src='js/index.js'></script>
 	<head>
@@ -12,18 +13,18 @@
 				<div class='loginform'>
 					<h1 class='logintitle text-center'>TACTICS</h1>
 					<div class='formproper'>
-			<form method = 'POST' action = 'login.php'>
 							<div class='form-group formrow row'>
 								<label class='h3 text-left col-form-label col-md-11 col-md-offset-1'>Username</label>
 								<div class='col-md-10 col-md-offset-1'>
-									<input type='text' class='form-control' name = 'username' >
-
+									<input id='user' type='text' class='form-control' name = 'username' >
+									<span class='text-danger'></span>
 								</div>
 							</div>
 							<div class='form-group formrow row'>
 								<label class='h3 text-left col-form-label col-md-11 col-md-offset-1'>Password</label>
 								<div class='col-md-10 col-md-offset-1'>
-									<input type='password' class='form-control' name = 'password' >
+									<input id='pass' type='password' class='form-control' name = 'password' >
+									<span class='text-danger'></span>
 								</div>
 							</div>
 							<div class='row forbut'>
@@ -34,7 +35,6 @@
 									<button id='reg' type='button' class='btn-lg but2 col-md-10 col-md-offset-1 btn btn-default'>Register</button>
 								</a>
 							</div>
-						</form>
 					</div>
 				</div>
 			</div>
