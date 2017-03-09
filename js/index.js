@@ -37,6 +37,7 @@ function check(){
 			case '1':
 				$(".menubg").slideUp(1000);
 				$(".loginform").slideUp(980);
+				setTimeout(function(){ window.location.href = 'http://www.google.com'}, 1000);
 			break;
 			case '0':
 				$("#user").siblings("span").text("Username does not match with password");
