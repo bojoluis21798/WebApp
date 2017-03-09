@@ -1,6 +1,7 @@
 <?php
 	require('header.php');
 ?>
+	<link rel='stylesheet' href='css/index.css'/>
 	<head>
 		<title>Register</title>
 	</head>

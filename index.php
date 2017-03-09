@@ -1,6 +1,7 @@
 <?php
 	require('header.php');
 ?>
+	<script src='js/index.js'></script>
 	<head>
 		<title>Tactics</title>
 	</head>

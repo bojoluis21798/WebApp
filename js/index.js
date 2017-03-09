@@ -35,9 +35,8 @@ function check(){
 				$("#pass").siblings("span").text("Please Enter Password");
 			break;
 			case '1':
-				$(".menubg").slideUp(1000);
 				$(".loginform").slideUp(980);
-				setTimeout(function(){ window.location.href = 'http://www.google.com'}, 1000);
+				setTimeout(function(){ window.location.href = 'main.php'}, 1000);
 			break;
 			case '0':
 				$("#user").siblings("span").text("Username does not match with password");
