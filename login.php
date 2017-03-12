@@ -1,6 +1,5 @@
 <?php
 	require("conn.php");
-	session_start();
 
 	if(empty($_POST['username']) || empty($_POST['password'])){
 		if(empty($_POST['username'])){
@@ -13,6 +12,6 @@
 	
 	$sql = "SELECT * FROM users WHERE username = '{$_POST['username']}' and password = '{$_POST['password']}'";
 	$result = mysqli_query($conn, $sql);
-	
+	session_start();
 	echo $count = mysqli_num_rows($result);
 ?>

@@ -22,6 +22,11 @@ function login(callback){
 		});
 }
 
+function errorin(selector){
+	$(selector).css("border","2px solid red");
+	$(selector).css("box-shadow","0 0 10px red");
+}
+
 function check(){
 	login(function(flag){
 		console.log(flag);
@@ -30,16 +35,21 @@ function check(){
 		switch(flag){
 			case '-1':
 				$("#user").siblings("span").text("Please Enter Username");
+				errorin("#user");
 			break;
 			case '-2':
 				$("#pass").siblings("span").text("Please Enter Password");
+				errorin("#pass");
 			break;
 			case '1':
 				$(".loginform").slideUp(980);
+				$(".menubg").slideUp(980);
 				setTimeout(function(){ window.location.href = 'main.php'}, 1000);
 			break;
 			case '0':
 				$("#user").siblings("span").text("Username does not match with password");
+				errorin("#user");
+				errorin("#pass");
 			break;
 		}
 	});
@@ -50,5 +60,13 @@ $(document).ready(function(){
 		console.log($("#user").val());
 		console.log($("#pass").val());
 		check();
+	});
+	
+	$(document).keypress(function(e) {
+	  if(e.which == 13) {
+		console.log($("#user").val());
+		console.log($("#pass").val());
+		check();
+	  }
 	});
 });

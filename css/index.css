@@ -46,7 +46,7 @@ input{
 }
 
 .logintitle{
-	font-size: 5em;
+	font-size: 9em;
 	
 }
 
@@ -64,7 +64,7 @@ input{
 }
 
 .contentbody{
-	margin-top: 20px;
+	margin-top: 5%;
 }
 
 .title{
@@ -74,4 +74,40 @@ input{
 .desc{
 	font-size: 30px;
 	font-family: Courier New;
+}.options{
+	margin-top: 100px;
+}.midopt{
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+}.map{
+	width: 32.3%;
+	float: left;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	height: 45%;
+}
+.opts{
+	height: 0%;
+	width: 100%;
+	background-size: 80ch 50ch;
+	background-repeat: no-repeat;
+}.bg{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+}.bg:hover{
+	background-color: rgba(0, 0, 0, 0);
+}.maptitle{
+	padding-top: 2.5%;
+	height: 15%;
+	font-family: Courier New;
+	background-color: rgb(20, 20, 20);
+}
+#dust2{
+	background-image: url(../img/dust_2.jpg);
+	
+}#inferno{
+	background-image: url(../img/inferno.png);
+}#mirage{
+	background-image: url(../img/mirage.jpg);
 }
