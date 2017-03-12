@@ -33,6 +33,9 @@ function noterrorin(selector){
 }
 
 function check(){
+	noterrorin("#user");
+	noterrorin("#pass");
+	
 	login(function(flag){
 		console.log(flag);
 		noterrorin("#user");
@@ -50,7 +53,7 @@ function check(){
 			break;
 			case '1':
 				$(".loginform").slideUp(980);
-				$(".menubg").slideUp(980);
+				$(".menubg").slideUp(1100);
 				setTimeout(function(){ window.location.href = 'main.php'}, 1000);
 			break;
 			case '0':
