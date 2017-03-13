@@ -7,15 +7,18 @@
 	// 1 - dust 2
 	// 2 - inferno
 	// 3 - mirage
-	
+	$directory = "img/";
 	switch($_GET['id']){
 		case 1:
+			$bg = "dust_2.jpg";
 			$maptitle = "DUST 2";
 		break;
 		case 2:
+			$bg = "inferno.png";
 			$maptitle = "INFERNO";
 		break;
 		case 3:
+			$bg = "mirage.jpg";
 			$maptitle = "MIRAGE";
 		break;
 		default:
@@ -23,6 +26,11 @@
 		break;
 	}
 ?>
+<style>
+	body{
+		background-image: url(<?php echo $directory.$bg; ?>) !important;
+	}
+</style>
 <body>
 	<?php
 		require('headerbar.php');
