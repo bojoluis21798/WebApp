@@ -4,6 +4,8 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	color: white;
 }
 
@@ -51,20 +53,24 @@ input{
 }
 
 .loginform{
-	position: absolute;
-	top: 10%;
-	left: 25%;
 	width: 50%;
+	margin: auto;	
 }
 
 .header{
 	background-color: black;
-	height: 5%;
-	padding-top: 0.85%;
+	height: 3em;
+	padding-top: 1em;
+}
+
+.navit{
+	color: white;
+	font-size: 1em;
 }
 
 .contentbody{
-	margin-top: 5%;
+	margin-top: 2.5em; 
+	margin-bottom: 2.5em;
 }
 
 .title{
@@ -75,7 +81,7 @@ input{
 	font-size: 30px;
 	font-family: Courier New;
 }.options{
-	margin-top: 100px;
+	margin-top: 2em;
 }.midopt{
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -95,12 +101,13 @@ input{
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	width: 100%;
-}.bg:hover{
-	background-color: rgba(0, 0, 0, 0);
 }.maptitle{
-	padding-top: 2.5%;
+	padding-top: 0.5em;
 	height: 15%;
 	font-family: Courier New;
+	color: grey;
+	background-color: rgb(20, 20, 20);
+}.mapname{
 	background-color: rgb(20, 20, 20);
 }
 #dust2{

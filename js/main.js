@@ -22,5 +22,29 @@ function initanim(){
 }
 
 $(document).ready(function(){
-	initanim();
+	var wait = 0;
+	if(flag==0){ 
+		initanim();
+		wait = 6500;
+	}
+	else{
+		$(".opts").css("height","85%");
+	}
+	
+	setTimeout(function(){
+		$(".map").hover(function(){
+			$(this).children(".opts").children(".bg").css("background-color","rgba(0,0,0,0)");
+			$(this).children(".maptitle").css("background-color","white");
+			$(this).children(".maptitle").css("color","black");
+			$(this).children(".maptitle").children(".mapname").css("background-color","white");
+		});
+		
+		$(".map").mouseout(function(){
+			$(this).children(".opts").children(".bg").css("background-color","rgba(0,0,0,0.5)");
+			$(this).children(".maptitle").css("background-color","rgb(20, 20, 20)");
+			$(this).children(".maptitle").css("color","grey");
+			$(this).children(".maptitle").children(".mapname").css("background-color","rgb(20, 20, 20)");
+		});
+	},wait);
+	
 });	

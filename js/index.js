@@ -27,9 +27,16 @@ function errorin(selector){
 	$(selector).css("box-shadow","0 0 10px red");
 }
 
+function noterrorin(selector){
+	$(selector).css("border","");
+	$(selector).css("box-shadow","");
+}
+
 function check(){
 	login(function(flag){
 		console.log(flag);
+		noterrorin("#user");
+		noterrorin("#pass");
 		$("#user").siblings("span").text("");
 		$("#pass").siblings("span").text("");
 		switch(flag){
