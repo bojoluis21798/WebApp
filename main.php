@@ -3,6 +3,9 @@
 	require('header.php');
 ?>
 <script src='js/main.js'></script>
+<script>
+	var flag = <?php echo (isset($_GET['visited']))?1:0;?>;
+</script>
 <body>
 		<?php
 			require('headerbar.php');

@@ -22,7 +22,14 @@ function initanim(){
 }
 
 $(document).ready(function(){
-	initanim();
+	var wait = 0;
+	if(flag==0){ 
+		initanim();
+		wait = 6500;
+	}
+	else{
+		$(".opts").css("height","85%");
+	}
 	
 	setTimeout(function(){
 		$(".map").hover(function(){
@@ -38,6 +45,6 @@ $(document).ready(function(){
 			$(this).children(".maptitle").css("color","grey");
 			$(this).children(".maptitle").children(".mapname").css("background-color","rgb(20, 20, 20)");
 		});
-	},6500);
+	},wait);
 	
 });	

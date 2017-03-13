@@ -13,10 +13,10 @@
 			$maptitle = "DUST 2";
 		break;
 		case 2:
-			$maptitle = "MIRAGE";
+			$maptitle = "INFERNO";
 		break;
 		case 3:
-			$maptitle = "INFERNO";
+			$maptitle = "MIRAGE";
 		break;
 		default:
 			$maptitle = "";
@@ -27,7 +27,7 @@
 	<?php
 		require('headerbar.php');
 	?>
-	<div class='row contentbody box'>
+	<div class='row contentbody'>
 		<div class='col-md-12'>
 			<div class='row'>
 				<div class='col-md-8 col-md-offset-2'>
@@ -36,6 +36,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </body>

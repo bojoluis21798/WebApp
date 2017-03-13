@@ -2,7 +2,7 @@
 		<div class='header row'>
 			<div class='col-md-4'>
 				<div class='row '>
-					<a href='main.php'>
+					<a href='main.php?visited=1'>
 						<div class='col-md-2 navdiv'>
 							<span class='h4 navit'>HOME</span>
 						</div>
