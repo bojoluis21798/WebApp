@@ -1,10 +1,8 @@
+<html>
 <?php
 	require('header.php');
 ?>
 	<script src='js/index.js'></script>
-	<head>
-		<title>Tactics</title>
-	</head>
 	<body>
 		<div class='menubg'>
 			<div class='container-fluid'>
