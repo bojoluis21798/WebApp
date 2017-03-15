@@ -10,15 +10,15 @@
 	$directory = "img/";
 	switch($_GET['id']){
 		case 1:
-			$bg = "dust_2.jpg";
+			$bg = "dust_2_edit.jpg";
 			$maptitle = "DUST 2";
 		break;
 		case 2:
-			$bg = "inferno.png";
+			$bg = "inferno_edit.jpg";
 			$maptitle = "INFERNO";
 		break;
 		case 3:
-			$bg = "mirage.jpg";
+			$bg = "mirage_edit.jpg";
 			$maptitle = "MIRAGE";
 		break;
 		default:

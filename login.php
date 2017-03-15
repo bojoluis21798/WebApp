@@ -11,6 +11,8 @@
 	}
 	
 	$sql = "SELECT * FROM users WHERE username = '{$_POST['username']}' and password = '{$_POST['password']}'";
+	$_SESSION['username'] = $_POST['username'];
+	$_SESSION['password'] = $_POST['password'];	
 	$result = mysqli_query($conn, $sql);
 	session_start();
 	echo $count = mysqli_num_rows($result);

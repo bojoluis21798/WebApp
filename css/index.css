@@ -81,7 +81,7 @@ input{
 	font-size: 30px;
 	font-family: Courier New;
 }.options{
-	margin-top: 2em;
+	margin-top: 10em;
 }.midopt{
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -102,7 +102,7 @@ input{
 	height: 100%;
 	width: 100%;
 }.maptitle{
-	padding-top: 0.5em;
+	padding-top: 1em;
 	height: 15%;
 	font-family: Courier New;
 	color: grey;
