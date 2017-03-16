@@ -44,7 +44,10 @@
 					</div>
 				</div>
 			</div>
-			
+		</div>
+		<div class='mapnav prev'>
+		</div>
+		<div class='mapnav next'>
 		</div>
 	</div>
 </body>

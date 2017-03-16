@@ -110,6 +110,16 @@ input{
 }.mapname{
 	background-color: rgb(20, 20, 20);
 }
+.mapnav{
+	background-color: rgba(145, 145, 145, 0.5);
+}
+.prev{
+	position: absolute;
+	left: 0%;
+	top: 45%;
+	height: 25%;
+	width: 5%;
+}
 #dust2{
 	background-image: url(../img/dust_2.jpg);
 	
