@@ -4,7 +4,7 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
-	background-size: 100% 100%;
+	background-size: 200ch 100ch;
 	background-repeat: no-repeat;
 	color: white;
 }
