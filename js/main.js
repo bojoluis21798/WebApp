@@ -32,14 +32,14 @@ $(document).ready(function(){
 	}
 	
 	setTimeout(function(){
-		$(".map").hover(function(){
+		$(".map").mouseenter(function(){
 			$(this).children(".opts").children(".bg").css("background-color","rgba(0,0,0,0)");
 			$(this).children(".maptitle").css("background-color","white");
 			$(this).children(".maptitle").css("color","black");
 			$(this).children(".maptitle").children(".mapname").css("background-color","white");
 		});
 		
-		$(".map").mouseout(function(){
+		$(".map").mouseleave(function(){
 			$(this).children(".opts").children(".bg").css("background-color","rgba(0,0,0,0.5)");
 			$(this).children(".maptitle").css("background-color","rgb(20, 20, 20)");
 			$(this).children(".maptitle").css("color","grey");

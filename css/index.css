@@ -70,7 +70,7 @@ input{
 
 .contentbody{
 	margin-top: 2.5em; 
-	margin-bottom: 2.5em;
+	margin-bottom: 10em;
 }
 
 .title{
@@ -110,16 +110,60 @@ input{
 }.mapname{
 	background-color: rgb(20, 20, 20);
 }
-.arrow{
+#p2{
+	top: 185;
+	left: 415;
+	
+}#ttest{
+	top: 400;
+	left: 455;
+}
+.target{
 	position: absolute;
-	top: 3em;
-	height: 120%;
+	font-size: 1.5em;
+	color: red;
+	width: 1.2em;
+	height: 1.2em;
+}
+.point{
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 1em;
+	border: 0.2em solid yellow;
+}
+.arrow{
+	position: fixed;
+	height: 100%;
+	top:0;
 	width: 2.5em;
+}.vid{
+	position: absolute;
+	top:30%;
+	right:2%;
+	height: 15em;
+	width: 17em;
+	border-radius: 0.5em;
+	border: 0.1em dashed white;
+	background-color: grey;
+	animation-iteration-count: infinite;
+}
+.mapprop{
+	height: 100%;
+}
+.gifanim{
+	border-radius: 0.5em;
+	height: 100%;
+	width: 100%;
+}.cap{
+	position: absolute;
+	top: 80;
+	left: 30;
 }
 .mapnav{
 	height: 100%;
 	width: 2.5em;
-	background-color: rgba(145, 145, 145, 0.9	);
+	background-color: rgba(145, 145, 145, 0.7);
 	border: 0px;
 }.optionsbar{
 	padding-top: 3em;

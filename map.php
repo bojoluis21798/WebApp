@@ -32,6 +32,8 @@
 <script src='js/map.js'></script>
 <script>
 	var id = <?php echo $_GET['id']; ?>;
+	var smokes = [];
+	<?php require('loadsmokes.php'); ?>
 </script>
 <style>
 	body{
@@ -47,7 +49,7 @@
 	<div class='row contentbody'>
 		<div class='col-md-12'>
 			<div class='row'>
-				<div class='col-md-8 col-md-offset-2'>
+				<div class='col-md-10 col-md-offset-1'>
 					<div class='row text-center'>
 						<span class='h1 title'><?php echo $maptitle; ?></span>
 					</div>
@@ -63,7 +65,7 @@
 									</div>
 									<div class='form-check row'>
 										<div class='col-md-1'>
-											<input class='form-check-input' type='checkbox' value=''>
+											<input class='form-check-input' type='checkbox' value='1' checked>
 										</div>
 										<div class='col-md-7'>
 											<span class='h5'>Show Video</span>
@@ -71,13 +73,22 @@
 									</div>
 									<div class='form-check row'>
 										<div class='col-md-1'>
-											<input class='form-check-input' type='checkbox' value=''>
+											<input class='form-check-input' type='checkbox' value='' checked>
 										</div>
 										<div class='col-md-7'>
 											<span class='h5'>Show Target Point</span>
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class='col-md-10'>
+							<div class='col-md-9 mapprop'>
+								<div class='point' id='p2'></div>
+							</div>
+							<div class='vid'>
+								<span class='h6 cap'>Hover on a point to display Video</span>
+								<img src='' class='gifanim'>
 							</div>
 						</div>
 					</div>
@@ -88,5 +99,7 @@
 	</div>
 	<div class='arrow prev'><button class='mapnav'><span class='glyphicon glyphicon-chevron-left'></button></div>
 	<div class='arrow next'><button class='mapnav'><span class='glyphicon glyphicon-chevron-right'></button></div>
+	<?php require('footer.php'); ?>
+	</div>
 </body>
 </html>

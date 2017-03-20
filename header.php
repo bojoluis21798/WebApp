@@ -1,7 +1,7 @@
-	<link rel='stylesheet' href='css/bootstrap.css'/>
-	<link rel='stylesheet' href='css/index.css'/>
-	<link rel='icon' href='img/webico.ico'/>
-	<script src='js/jquery.min.js'></script>
 	<head>
-	<title>Tactics</title>
+		<link rel='stylesheet' href='css/bootstrap.css'/>
+		<link rel='stylesheet' href='css/index.css'/>
+		<link rel='icon' href='img/webico.ico'/>
+		<script src='js/jquery.min.js'></script>
+		<title>Tactics</title>
 	</head>
