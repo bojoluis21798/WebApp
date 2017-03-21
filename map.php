@@ -105,10 +105,6 @@
 						</div>
 						<div class='col-md-10'>
 							<div class='col-md-9 mapprop'>
-								<div class='point smokes' id='p8'></div>
-								<div class='target smokes' id='t8'>
-									<span class='glyphicon glyphicon-remove'></span>
-								</div>
 							</div>
 							<div class='vid'>
 								<span class='h6 cap'>Hover on a point to display Video</span>
