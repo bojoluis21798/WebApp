@@ -59,8 +59,8 @@
 								<div class='col-md-10  col-md-offset-1'>
 									<div class='form-group row'>
 										<select class='form-control'>
-											<option>Flashes</option>
 											<option>Smokes</option>
+											<option>Flashes</option>
 										</select>
 									</div>
 									<div class='form-check row'>
@@ -84,7 +84,10 @@
 						</div>
 						<div class='col-md-10'>
 							<div class='col-md-9 mapprop'>
-								<div class='point' id='p2'></div>
+								<div class='point' id='p4'></div>
+								<div class='target' id='t4'>
+									<span class='glyphicon glyphicon-remove'></span>
+								</div>
 							</div>
 							<div class='vid'>
 								<span class='h6 cap'>Hover on a point to display Video</span>
