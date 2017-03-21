@@ -28,8 +28,8 @@ function gifanim(m_id){
 function loadsmoke(){
 	for(var i=0; i<smokes.length; i++){
 		if(id == smokes[i].map_id){
-			$(".mapprop").append("<div class='point' id='p"+(i+1)+"'></div>");
-			$(".mapprop").append("<div class='target' id='t"+(i+1)+"'><span class='glyphicon glyphicon-remove'></span></div>");
+			$(".mapprop").append("<div class='point smokes' id='p"+(i+1)+"'></div>");
+			$(".mapprop").append("<div class='target smokes' id='t"+(i+1)+"'><span class='glyphicon glyphicon-remove'></span></div>");
 			$("#p"+(i+1)).css("top",smokes[i].y).css("left",smokes[i].x);
 			$("#t"+(i+1)).css("top",smokes[i].t_y).css("left",smokes[i].t_x);
 		}
@@ -43,7 +43,7 @@ function blink(selector){
 		$(selector).fadeIn(200, function(){
 			$(selector).fadeOut(200);
 		});
-	},200);
+	},100);
 }
 
 function initanim(){
@@ -60,7 +60,27 @@ $(document).ready(function(){
 	loadsmoke();
 	initanim();
 	
+	$("#showvid").on("click", function(){
+		if($(this).prop('checked') == false){
+			$(".vid").hide();
+		}else{
+			$(".vid").show();
+		}
+	});
+
 	$(".gifanim").hide();
+	
+	$(".type").on("click", function(){
+		if($(this).text() == "Flashes"){
+			$(".smokes").hide();
+		}else if($(this).text() == "Smokes"){
+			$(".flashes").hide();
+			if($(".point").hasClass("smokes")){
+				$(".point").show();
+			}
+		}
+	});
+	
 	$(".prev > .mapnav").on("click", function(){
 		id -= 1;
 		if(id == 0){
@@ -93,15 +113,18 @@ $(document).ready(function(){
 		$(".gifanim").show();
 		
 		pid = $(this).attr("id");
-		$("#t"+pid[1]).show();
-		blink($("#t"+pid[1]));
-		gifanim(pid[1]);
+		pid = pid.substring(1);
+		
+		if($('#showtarget').prop('checked')){
+			blink($("#t"+pid));
+		}
+		
+		gifanim(pid);
 	});
 	
 	$(".point").mouseleave(function(){
 		clearInterval(thread_id[1]);
-		$("#t"+pid[1]).hide();
-		$(this).css("border-color","yellow");
+		$(this).css("border-color","lime");
 		$(".vid").css("border","0.1em dashed white");
 		$(".cap").show();
 		clearInterval(thread_id[0]);
