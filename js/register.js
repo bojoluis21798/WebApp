@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#reg").on("click", function(){
 		if($("#pass").val() != $("#conpass").val()){
-			$(".pass").text("Both passwords do not match!");
+			$("span").text("Both passwords do not match!");
 		}else{
 			insert();
 		}
@@ -16,7 +16,7 @@ function insert(){
 		dataType: "json",
 		data:{
 			username: $("#user").val(),
-			password: $("#pass").val(),
+			pass: $("#pass").val(),
 		},
 		success:function(){
 			alert("Registered Successfully. Returned to the index page");

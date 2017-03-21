@@ -1,14 +1,14 @@
 <html>
 <?php
 	require('header.php');
-?>
+?>	
 	<body>
 		<div class='menubg'>
 			<div class='container-fluid'>
 				<div class='loginform'>
 					<h1 class='logintitle text-center'>REGISTER</h1>
 					<div class='formproper'>
-						<form class = 'form'>
+						<div class = 'form'>
 							<div class='form-group formrow row'>
 								<label class='h3 text-left col-form-label col-md-11 col-md-offset-1'>Username</label>
 								<div class='col-md-10 col-md-offset-1'>
@@ -30,7 +30,7 @@
 								</div>
 							</div>
 							<div class='row forbut'>
-									<input type='submit' id='reg' class='btn-lg but2 col-md-10 col-md-offset-1 btn btn-default' value = 'Register'>
+									<input type='button' id='reg' class='btn-lg but2 col-md-10 col-md-offset-1 btn btn-default' value = 'Register'>
 							</div>
 						</div>
 					</div>
@@ -39,3 +39,4 @@
 		</div>
 	</body>
 </html>
+<script src = 'js/register.js'></script>
