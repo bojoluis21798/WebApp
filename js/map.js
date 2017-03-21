@@ -25,17 +25,17 @@ function gifanim(m_id){
 	},smokes[m_id-1].duration);
 }
 
-function loadsmoke(){
-	for(var i=0; i<smokes.length; i++){
-		if(id == smokes[i].map_id){
-			$(".mapprop").append("<div class='point smokes' id='p"+(i+1)+"'></div>");
-			$(".mapprop").append("<div class='target smokes' id='t"+(i+1)+"'><span class='glyphicon glyphicon-remove'></span></div>");
-			$("#p"+(i+1)).css("top",smokes[i].y).css("left",smokes[i].x);
-			$("#t"+(i+1)).css("top",smokes[i].t_y).css("left",smokes[i].t_x);
+function loadpoints(type){
+	var use = (type == "smokes")?smokes:flashes;
+	for(var i=0; i<use.length; i++){
+		if(id == use[i].map_id){
+			$(".mapprop").append("<div class='point "+type+"' id='p"+(i+1)+"'></div>");
+			$(".mapprop").append("<div class='target "+type+"' id='t"+(i+1)+"'><span class='glyphicon glyphicon-remove'></span></div>");
+			$("#p"+(i+1)).css("top",use[i].y).css("left",use[i].x);
+			$("#t"+(i+1)).css("top",use[i].t_y).css("left",use[i].t_x);
 		}
 		$(".target").hide();
 	}
-	
 }
 
 function blink(selector){
@@ -57,7 +57,8 @@ function initanim(){
 }
 
 $(document).ready(function(){
-	loadsmoke();
+	loadpoints("smokes");
+	loadpoints("flashes");
 	initanim();
 	
 	$("#showvid").on("click", function(){
