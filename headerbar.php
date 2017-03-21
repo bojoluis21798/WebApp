@@ -7,7 +7,7 @@
 							<span class='h4 navit'>MAPS</span>
 						</div>
 					</a>
-					<a href='main.php?visited=1'>
+					<a href='weapons.php'>
 						<div class='col-md-3 navdiv'>
 							<span class='h4 navit'>WEAPONS</span>
 						</div>

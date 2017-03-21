@@ -7,15 +7,17 @@
 ?>
 <style>
 	section{
-		padding: 100px;
+		padding: 20px;
+	}body{
+		background-image: url(img/weapons.png);
+		background-size: 100% 150ch;
 	}
-	
-	
 </style>
 <title>Tactics</title>
 <body>
+<?php require('headerbar.php'); ?>
 <section class = 'primary-sec'>
-	<div class = 'container'>
+	<div class = 'container-fluid'>
 		<div id = 'myModal' class = 'modal fade' role = 'dialog'>
 			<div class = 'modal-dialog'>
 				<div class = 'modal-header'>
@@ -45,14 +47,14 @@
 		</div>
 		
 		<div class = 'row' >
-		<h1 class = 'text-center' >Weapons</h1>
+		<h1 class = 'text-center title' >Weapons</h1>
 			<?php
 				$result = mysqli_query($conn, $sql);
 				while($data = mysqli_fetch_assoc($result)){
-					echo "<div class = 'col-md-6 weapons' id = '{$data['wid']}' data-name = '{$data['weapon-name']}' 
-														  data-price = {$data['price']} data-head = '{$data['head_damage']}'
-														  data-chest = '{$data['chest_damage']}' data-stomach = '{$data['stomach_damage']}' 
-														  data-leg = '{$data['leg_damage']}' data-zoom = '{$data['speed_zoom']}'>";
+					echo "<div class = 'col-md-6 weapons' data-name = '{$data['weapon-name']}'" 
+														  ."data-price = {$data['price']} data-head = '{$data['head_damage']}'"
+														  ."data-chest = '{$data['chest_damage']}' data-stomach = '{$data['stomach_damage']}'" 
+														  ."data-leg = '{$data['leg_damage']}' data-zoom = '{$data['speed_zoom']}'>";
 														  
 					echo "<img src = 'img/weapons/{$data['weapon-name']}.png' class = 'img-responsive center-block'>";
 					echo "</div>";
