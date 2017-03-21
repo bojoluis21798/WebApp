@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#reg").on("click", function(){
 		if($("#pass").val() != $("#conpass").val()){
-			$(".pass").text("Both passwords do not match!");
+			$("span").text("Both passwords do not match!");
 		}else{
 			insert();
 		}
