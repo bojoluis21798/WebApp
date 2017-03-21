@@ -61,6 +61,7 @@
 										<select class='form-control'>
 											<option class='type'>Smokes</option>
 											<option class='type'>Flashes</option>
+
 										</select>
 									</div>
 									<div class='form-check row'>

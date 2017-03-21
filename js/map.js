@@ -30,6 +30,7 @@ function loadsmoke(){
 		if(id == smokes[i].map_id){
 			$(".mapprop").append("<div class='point smokes' id='p"+(i+1)+"'></div>");
 			$(".mapprop").append("<div class='target smokes' id='t"+(i+1)+"'><span class='glyphicon glyphicon-remove'></span></div>");
+
 			$("#p"+(i+1)).css("top",smokes[i].y).css("left",smokes[i].x);
 			$("#t"+(i+1)).css("top",smokes[i].t_y).css("left",smokes[i].t_x);
 		}
@@ -120,11 +121,13 @@ $(document).ready(function(){
 		}
 		
 		gifanim(pid);
+
 	});
 	
 	$(".point").mouseleave(function(){
 		clearInterval(thread_id[1]);
 		$(this).css("border-color","lime");
+
 		$(".vid").css("border","0.1em dashed white");
 		$(".cap").show();
 		clearInterval(thread_id[0]);
