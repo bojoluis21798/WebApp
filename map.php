@@ -33,7 +33,27 @@
 <script>
 	var id = <?php echo $_GET['id']; ?>;
 	var smokes = [];
-	<?php require('loadsmokes.php'); ?>
+	var flashes = [];
+	
+	<?php
+	require('conn.php');
+	
+	$sql = "SELECT * FROM points";
+	$result = mysqli_query($conn,$sql);
+	$smokectr = 0;
+	$flashesctr = 0;
+	for($i=0; $row = mysqli_fetch_assoc($result); $i++){
+		if(strcmp($row['type'], "smokes") == 0 && $_GET['id'] == $row['Map_id']){
+			echo "smokes[".$smokectr."] = {x: ".$row['x'].", y: ".$row['y'].","
+			."t_x: ".$row['t_x'].", t_y: ".$row['t_y'].", duration: ".$row['duration'].", map_id: ".$row['Map_id']."};";
+			$smokectr++;
+		}else if(strcmp($row['type'], 'flashes') == 0 && $_GET['id'] == $row['Map_id']){
+			echo "flashes[".$flashesctr."] = {x: ".$row['x'].", y: ".$row['y'].","
+			."t_x: ".$row['t_x'].", t_y: ".$row['t_y'].", duration: ".$row['duration'].", map_id: ".$row['Map_id']."};";
+			$flashesctr++;
+		}
+	}
+	?>
 </script>
 <style>
 	body{
@@ -59,13 +79,14 @@
 								<div class='col-md-10  col-md-offset-1'>
 									<div class='form-group row'>
 										<select class='form-control'>
-											<option>Smokes</option>
-											<option>Flashes</option>
+											<option class='type'>Smokes</option>
+											<option class='type'>Flashes</option>
+
 										</select>
 									</div>
 									<div class='form-check row'>
 										<div class='col-md-1'>
-											<input class='form-check-input' type='checkbox' value='1' checked>
+											<input class='form-check-input' type='checkbox' value='' id='showvid' checked = 'false'>
 										</div>
 										<div class='col-md-7'>
 											<span class='h5'>Show Video</span>
@@ -73,7 +94,7 @@
 									</div>
 									<div class='form-check row'>
 										<div class='col-md-1'>
-											<input class='form-check-input' type='checkbox' value='' checked>
+											<input class='form-check-input' type='checkbox' id='showtarget' value='' checked = 'true'>
 										</div>
 										<div class='col-md-7'>
 											<span class='h5'>Show Target Point</span>
@@ -84,8 +105,8 @@
 						</div>
 						<div class='col-md-10'>
 							<div class='col-md-9 mapprop'>
-								<div class='point' id='p4'></div>
-								<div class='target' id='t4'>
+								<div class='point smokes' id='p8'></div>
+								<div class='target smokes' id='t8'>
 									<span class='glyphicon glyphicon-remove'></span>
 								</div>
 							</div>
