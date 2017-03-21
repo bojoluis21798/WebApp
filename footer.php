@@ -1,11 +1,3 @@
-<?php
-	require("header.php");
-?>
-<style>
-	a:hover{
-		text-decoration:none;
-	}
-</style>
 <hr>
 <div class = 'container-fluid'>
 	<div class = 'row'>
@@ -21,7 +13,6 @@
 		</div>
 		<div class = 'col-md-2'>
 			<p class = 'text-left'><a href = '#'>User Agreement</a></p>
-		</div>
-
+		</div
 	</div>
 </div>

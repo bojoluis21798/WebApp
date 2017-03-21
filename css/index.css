@@ -4,7 +4,7 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
-	background-size: 200ch 100ch;
+	background-size: 180ch 130ch;
 	background-repeat: no-repeat;
 	color: white;
 }
@@ -70,7 +70,7 @@ input{
 
 .contentbody{
 	margin-top: 2.5em; 
-	margin-bottom: 2.5em;
+	margin-bottom: 10em;
 }
 
 .title{
@@ -81,16 +81,16 @@ input{
 	font-size: 30px;
 	font-family: Courier New;
 }.options{
-	margin-top: 10em;
+	margin-top: 5em;
 }.midopt{
 	margin-left: 12.5%;
 	margin-right: 12.5%;
 }.map{
-	width: 32.3%;
+	width: 30.5em;
 	float: left;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-	height: 45%;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	height: 27em;
 }
 .opts{
 	height: 0%;
@@ -102,23 +102,87 @@ input{
 	height: 100%;
 	width: 100%;
 }.maptitle{
-	padding-top: 1em;
-	height: 15%;
+	padding-top: 0.6em;
+	height: 3.5em;
 	font-family: Courier New;
 	color: grey;
 	background-color: rgb(20, 20, 20);
 }.mapname{
 	background-color: rgb(20, 20, 20);
 }
-.mapnav{
-	background-color: rgba(145, 145, 145, 0.5);
+#p2{
+	top: 185;
+	left: 415;
+	
+}#ttest{
+	top: 400;
+	left: 455;
 }
-.prev{
+.target{
 	position: absolute;
+	font-size: 1.5em;
+	color: red;
+	width: 1.2em;
+	height: 1.2em;
+}
+.point{
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 1em;
+	border: 0.2em solid yellow;
+}
+.arrow{
+	position: fixed;
+	height: 100%;
+	top:0;
+	width: 2.5em;
+}.vid{
+	position: absolute;
+	top:30%;
+	right:2%;
+	height: 15em;
+	width: 17em;
+	border-radius: 0.5em;
+	border: 0.1em dashed white;
+	background-color: grey;
+	animation-iteration-count: infinite;
+}
+.mapprop{
+	height: 100%;
+}
+.gifanim{
+	border-radius: 0.5em;
+	height: 100%;
+	width: 100%;
+}.cap{
+	position: absolute;
+	top: 80;
+	left: 30;
+}
+.mapnav{
+	height: 100%;
+	width: 2.5em;
+	background-color: rgba(145, 145, 145, 0.7);
+	border: 0px;
+}.optionsbar{
+	padding-top: 3em;
+	height: 100%;
+	border-radius: 0.5em;
+	background-color: rgb(53, 53, 53);
+}
+.inmap{
+	background-size: 100% 100%;
+	margin-top: 3em;
+	height: 40em;
+	border-radius: 0.5em;
+}
+
+.prev{
 	left: 0%;
-	top: 45%;
-	height: 25%;
-	width: 5%;
+}
+.next{
+	right: 0%;
 }
 #dust2{
 	background-image: url(../img/dust_2.jpg);

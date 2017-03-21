@@ -3,11 +3,11 @@
 			<div class='col-md-4'>
 				<div class='row '>
 					<a href='main.php?visited=1'>
-						<div class='col-md-2 navdiv'>
+						<div class='col-md-2 col-md-offset-1 navdiv'>
 							<span class='h4 navit'>HOME</span>
 						</div>
 					</a>
-					<a href='#' id='nav'>
+					<a href='#' id='nav'> 
 						<div class='col-md-2 navdiv'>
 							<span class='h4 navit'>ABOUT</span>
 						</div>
