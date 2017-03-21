@@ -4,7 +4,7 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
-	background-size: 180ch 130ch;
+	background-size: 180ch 140ch;
 	background-repeat: no-repeat;
 	color: white;
 }
@@ -110,13 +110,13 @@ input{
 }.mapname{
 	background-color: rgb(20, 20, 20);
 }
-#p2{
-	top: 185;
-	left: 415;
+#p4{
+	top: 260;
+	left: 130;
 	
-}#ttest{
-	top: 400;
-	left: 455;
+}#t4{
+	top: 140;
+	left: 445;
 }
 .target{
 	position: absolute;
