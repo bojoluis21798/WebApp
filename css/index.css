@@ -110,14 +110,6 @@ input{
 }.mapname{
 	background-color: rgb(20, 20, 20);
 }
-#p4{
-	top: 260;
-	left: 130;
-	
-}#t4{
-	top: 140;
-	left: 445;
-}
 .target{
 	position: absolute;
 	font-size: 1.5em;
@@ -130,7 +122,7 @@ input{
 	width: 1.2em;
 	height: 1.2em;
 	border-radius: 1em;
-	border: 0.2em solid yellow;
+	border: 0.2em solid lime;
 }
 .arrow{
 	position: fixed;
@@ -139,8 +131,8 @@ input{
 	width: 2.5em;
 }.vid{
 	position: absolute;
-	top:30%;
-	right:2%;
+	bottom:1%;
+	right:1%;
 	height: 15em;
 	width: 17em;
 	border-radius: 0.5em;
