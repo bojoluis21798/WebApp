@@ -4,7 +4,7 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
-	background-size: 180ch 140ch;
+	background-size: 100% 140ch;
 	background-repeat: no-repeat;
 	color: white;
 }
@@ -77,11 +77,14 @@ input{
 	font-size: 90px;
 	font-family: Courier New;
 }
+.intcsgo{
+	margin-top: 5em;
+}
 .desc{
 	font-size: 30px;
 	font-family: Courier New;
 }.options{
-	margin-top: 5em;
+	margin-top: 2em;
 }.midopt{
 	margin-left: 12.5%;
 	margin-right: 12.5%;

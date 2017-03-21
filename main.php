@@ -17,7 +17,7 @@
 					<div class='row text-center'>
 						<span class='h1 title'>WELCOME TO TACTICS</span>
 					</div>
-					<div class='row text-center'>
+					<div class='row intcsgo text-center'>
 						<span class='h3 desc'>Interactive CS:GO Maps</span>
 					</div>
 				</div>
