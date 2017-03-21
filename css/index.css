@@ -4,8 +4,11 @@
 
 body{
 	background-image: url(../img/bg_edit.png);
-	background-size: 180ch 140ch;
+	//background-size: 180ch 140ch;
 	background-repeat: no-repeat;
+	position:absolute;
+	width:100%;
+	height:auto;
 	color: white;
 }
 

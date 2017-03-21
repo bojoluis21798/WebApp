@@ -5,16 +5,10 @@
 	require('conn.php');
 	$sql = "SELECT * FROM weapons";
 ?>
-<style>
-	section{
-		padding: 100px;
-	}
-	
-	
-</style>
+
 <title>Tactics</title>
 <body>
-<section class = 'primary-sec'>
+<div class = 'primary-sec'>
 	<div class = 'container'>
 		<div id = 'myModal' class = 'modal fade' role = 'dialog'>
 			<div class = 'modal-dialog'>
@@ -41,6 +35,9 @@
 						</tbody>
 					</table>
 				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 		
@@ -60,7 +57,10 @@
 			?>
 		</div>
 	</div>
-</section>
+</div>
+<?php
+	require("footer.php");
+?>
 </body>
 </html>
 <script>
