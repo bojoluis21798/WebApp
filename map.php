@@ -33,27 +33,7 @@
 <script>
 	var id = <?php echo $_GET['id']; ?>;
 	var smokes = [];
-	var flashes = [];
-	
-	<?php
-	require('conn.php');
-	
-	$sql = "SELECT * FROM points";
-	$result = mysqli_query($conn,$sql);
-	$smokectr = 0;
-	$flashesctr = 0;
-	for($i=0; $row = mysqli_fetch_assoc($result); $i++){
-		if(strcmp($row['type'], "smokes") == 0 && $_GET['id'] == $row['Map_id']){
-			echo "smokes[".$smokectr."] = {x: ".$row['x'].", y: ".$row['y'].","
-			."t_x: ".$row['t_x'].", t_y: ".$row['t_y'].", duration: ".$row['duration'].", map_id: ".$row['Map_id']."};";
-			$smokectr++;
-		}else if(strcmp($row['type'], 'flashes') == 0 && $_GET['id'] == $row['Map_id']){
-			echo "flashes[".$flashesctr."] = {x: ".$row['x'].", y: ".$row['y'].","
-			."t_x: ".$row['t_x'].", t_y: ".$row['t_y'].", duration: ".$row['duration'].", map_id: ".$row['Map_id']."};";
-			$flashesctr++;
-		}
-	}
-	?>
+	<?php require('loadsmokes.php'); ?>
 </script>
 <style>
 	body{
@@ -104,10 +84,6 @@
 						</div>
 						<div class='col-md-10'>
 							<div class='col-md-9 mapprop'>
-								<div class='point smokes' id='p8'></div>
-								<div class='target smokes' id='t8'>
-									<span class='glyphicon glyphicon-remove'></span>
-								</div>
 							</div>
 							<div class='vid'>
 								<span class='h6 cap'>Hover on a point to display Video</span>
