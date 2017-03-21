@@ -74,6 +74,7 @@ input{
 }
 
 .title{
+	margin-bottom: 1em;
 	font-size: 90px;
 	font-family: Courier New;
 }

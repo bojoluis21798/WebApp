@@ -10,7 +10,7 @@
 		padding: 20px;
 	}body{
 		background-image: url(img/weapons.png);
-		background-size: 100% 150ch;
+		background-size: 100% 180ch;
 	}
 </style>
 <title>Tactics</title>
@@ -47,7 +47,7 @@
 		</div>
 		
 		<div class = 'row' >
-		<h1 class = 'text-center title' >Weapons</h1>
+		<h1 class = 'text-center title' >Weapons Stats</h1>
 			<?php
 				$result = mysqli_query($conn, $sql);
 				while($data = mysqli_fetch_assoc($result)){

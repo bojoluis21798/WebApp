@@ -12,11 +12,6 @@
 							<span class='h4 navit'>WEAPONS</span>
 						</div>
 					</a>
-					<a href='#' id='nav'> 
-						<div class='col-md-2 navdiv'>
-							<span class='h4 navit'>ABOUT</span>
-						</div>
-					</a>
 				</div>
 			</div>
 		</div>
